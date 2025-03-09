@@ -1,0 +1,33 @@
+.global{
+   display:flex;
+   flex-direction: row;
+}
+
+.painel{
+   background-color:#0909ff;
+   color: #000;
+   width: 30%;
+  
+}
+.painel h4{
+   padding-left: 30px;
+}
+.painel p{
+   padding-left: 15px;
+}
+
+.painel figure{
+   display: flex;
+   justify-content: center;
+}
+
+.conteudo{
+   display:flex;
+   flex-direction: column;
+   padding-left: 15px;
+}
+
+a{
+   text-decoration:none;
+   color: #fff;
+}
