@@ -1,33 +1,99 @@
-.global{
-   display:flex;
+body {
+   font-family: 'Segoe UI', sans-serif;
+}
+
+.global {
+   display: flex;
    flex-direction: row;
 }
 
-.painel{
-   background-color:#0909ff;
-   color: #000;
+.painel {
+   background-color: #010822;
+   color: #fff;   /* Texto em branco */
    width: 30%;
-  
+   padding: 20px;   /* Espaçamento interno */
 }
-.painel h4{
+
+.painel a {
+   color: #aad3ff;   /* Azul claro para links */
+}
+
+.painel a:hover {
+   text-decoration: underline;
+}
+
+.painel h4 {
    padding-left: 30px;
 }
-.painel p{
+
+.painel p {
+   margin: 10px 0;
    padding-left: 15px;
 }
 
-.painel figure{
+.painel figure {
    display: flex;
    justify-content: center;
 }
 
-.conteudo{
-   display:flex;
-   flex-direction: column;
-   padding-left: 15px;
+.painel img {
+   width: 50%;
+   border-radius: 50%;
+   margin: 0 auto;
+   display: block;
 }
 
-a{
-   text-decoration:none;
+.painel hr {
+   border: 1px solid #2d4076;
+   margin: 20px 0;
+}
+
+.conteudo {
+   display: flex;
+   flex-direction: column;
+   padding-left: 10px;
+   width: 100%;
+}
+
+.conteudo hr {
+   border: none;   /* Remove a borda padrão */
+   border-top: 2px solid #010822;   /* Usa a mesma cor do painel */
+   margin: 20px 0;   /* Adiciona espaçamento */
+   width: 100%;   /* Garante largura total */
+}
+
+.conteudo h1 {
+   display: flex;
+   justify-content: center;
+   font-size: 2.5em;
+   align-items: center;
+}
+
+a {
+   text-decoration: none;
    color: #fff;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+   h1 {
+      font-size: 2em;
+   }
+
+   .painel {
+      padding: 15px;
+   }
+}
+
+@media (max-width: 768px) {
+   .global {
+      flex-direction: column;
+   }
+
+   .painel {
+      width: 100%;
+   }
 }
