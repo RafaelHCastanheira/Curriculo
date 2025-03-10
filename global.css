@@ -1,7 +1,9 @@
 body {
    font-family: 'Segoe UI', sans-serif;
 }
-
+h4, h3{
+   text-transform: uppercase;
+}
 .global {
    display: flex;
    flex-direction: row;
@@ -42,7 +44,13 @@ body {
    margin: 0 auto;
    display: block;
 }
-
+hr {
+   border: none;
+   border-top: 2px solid #010822;
+   margin: 20px 0;
+   width: 100%;
+ }
+ 
 .painel hr {
    border: 1px solid #2d4076;
    margin: 20px 0;
@@ -53,13 +61,6 @@ body {
    flex-direction: column;
    padding-left: 10px;
    width: 100%;
-}
-
-.conteudo hr {
-   border: none;   /* Remove a borda padrão */
-   border-top: 2px solid #010822;   /* Usa a mesma cor do painel */
-   margin: 20px 0;   /* Adiciona espaçamento */
-   width: 100%;   /* Garante largura total */
 }
 
 .conteudo h1 {
