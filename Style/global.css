@@ -7,6 +7,7 @@
 :root{
    --cor-texto: #222;
    --borda: 10px;
+   --sombra: 0 4px 8px rgba(0, 0, 0, 0.4)
 }
 
 body {
@@ -20,7 +21,7 @@ footer {
    background: #fff;
    padding: 2rem;
    text-align: center;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+   box-shadow: var(--sombra);
 }
 
 .navegação{
@@ -63,7 +64,7 @@ p{
 .card {
    background: #fff;
    border-radius: var(--borda);
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+   box-shadow: var(--sombra);
    padding: 1.5rem;
    display: flex;
    flex-direction: column;
