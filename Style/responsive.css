@@ -1,19 +1,32 @@
-@media (max-width: 470px){
-    .container-contato{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+@media (max-width: 470px) {
+  .container-contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 
-    .link-contato a {
-        width: 90%;
-      }
-    
-      header h1 {
-        font-size: 1.5rem;
-      }
+  .link-Git,
+  .link-Wpp,
+  .link-Email {
+    height: 150px;
+    width: 100px;
+  }
 
-      .card {
-        padding: .8rem;
-      }
+  .link-Git a,
+  .link-Wpp a,
+  .link-Email a {
+    width: 95%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: .8rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
